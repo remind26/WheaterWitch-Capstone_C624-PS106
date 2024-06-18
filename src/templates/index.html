@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="manifest" href="./app.webmanifest">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <title>WeatherWitch</title>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to Content</a>
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button id="hamburgerButton"><i class="ri-menu-line"></i></button>
+    </div>
+    <div class="app-bar__brand">
+      <img src="./images//logo.png" class="header-logo">
+    </div>
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="#/Home">Home</a></li>
+        <li><a href="#/Weather">Detection</a></li>
+        <li><a href="#/Aboutus">About Us</a></li>
+        <li><a href="#" id="logoutButton">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="loading" class="loading-spinner" style="display: none;"></div>
+
+  <main id="main-content" tabindex="-1"></main>
+
+  <footer>
+    <div class="footer-content" tabindex="0">
+      <p>&copy; 2024 - WeatherWitch</p>
+    </div>
+  </footer>
+</body>
+
+</html>
